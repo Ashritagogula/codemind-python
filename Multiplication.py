@@ -1,4 +1,4 @@
 x=input()
 y=input()
-div= int(x)*int(y)
-print(div)
+mul=int(x)*int(y)
+print(mul)
