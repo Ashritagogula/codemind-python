@@ -1,0 +1,15 @@
+def sum_not_between_A_and_B(arr, A, B):
+    total_sum = 0
+    for num in arr:
+        if num < A or num > B:  # Check if the element is not in the range [A, B]
+            total_sum += num
+    return total_sum
+
+# Input
+N = int(input())  # Length of the array
+arr = list(map(int, input().split()))  # Array elements
+A, B = map(int, input().split())  # Values of A and B
+
+# Calculate and output the result
+result = sum_not_between_A_and_B(arr, A, B)
+print(result)
